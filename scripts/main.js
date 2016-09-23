@@ -329,7 +329,7 @@ var NotFound = React.createClass({
 var routes = (
   <Router history={createBrowserHistory()}>
     <Route path="/react_proj/" component={StorePicker}/>
-    <Route path="/react_proj/store/:storeId" component={App}/>
+    <Route path="/store/:storeId" component={App}/>
     <Route path="*" component={NotFound}/>
   </Router>
 )
