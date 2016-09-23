@@ -297,7 +297,7 @@ var StorePicker = React.createClass({
     event.preventDefault();
     // get the data from the input
     var storeId = this.refs.storeId.value;
-    this.history.pushState(null, 'react_proj/store/' + storeId);
+    this.history.pushState(null, '/react_proj/' + storeId);
   },
   render : function() {
     return (
@@ -329,7 +329,7 @@ var NotFound = React.createClass({
 var routes = (
   <Router history={createBrowserHistory()}>
     <Route path="/react_proj/" component={StorePicker}/>
-    <Route path="/react_proj/store/:storeId" component={App}/>
+    <Route path="/react_proj/:storeId" component={App}/>
     <Route path="*" component={NotFound}/>
   </Router>
 )
